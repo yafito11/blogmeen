@@ -1,0 +1,23 @@
+{
+  "name": "exblog",
+  "version": "1.0.0",
+  "description": "membuat blog dengan express js mongodb mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "mongoose",
+    "mongodb"
+  ],
+  "author": "yafieyulianto",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4"
+  }
+}
