@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
-})
+app.set('views', './src/views')
+app.set('view engine', 'ejs')
+
+require('./src/routes/home.routes')(app)
 
 const PORT = 5000
 app.listen(PORT, () => {
