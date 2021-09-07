@@ -11,8 +11,9 @@ const articleSchema = new Schema({
         type: String
     },
     content: {
+        required: true,
         type: String
-    },
+    }
 })
 
 module.exports = mongoose.model('Article', articleSchema)
