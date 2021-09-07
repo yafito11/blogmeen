@@ -19,20 +19,23 @@
         <!-- Navigation-->
         <%- include('../partials/navbar.ejs') %> 
         <!-- Page Header-->
-        <%- include('../partials/header-post.ejs', {
-            title: article.title,
-            subtitle: article.subtitle,
-        }) %> 
+        <header class="masthead" style="background-image: url('/img/post-bg.jpg')">
+            <div class="overlay"></div>
+        </header>
         <!-- Main Content-->
-        <article class="mb-4">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <%- article.content %>
-                    </div>
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h2>Edit Single Post</h2>
+                    <form action="/blog/<%= article.id %>?_method=DELETE" method="POST">
+                        <div class="form-floating">
+                            <label for="name"><h1>Artikel Sudah Terhapus</h1></label>
+                            <!-- <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div> -->
+                        </div>
+                    </form>
                 </div>
             </div>
-        </article>
+        </div>
         <!-- Footer-->
         <%- include('../partials/footer.ejs') %> 
         <!-- Bootstrap core JS-->

@@ -37,6 +37,9 @@
                             on September 24, 2021
                         </p>
                         <a href="/blog/<%= article.id %>/edit " class="btn btn-link text-info">Edit</a>
+                        <form action="/blog/<%= article.id %>?_method=DELETE" id="form-delete" method="POST" >
+                            <button class="btn btn-link text-danger btn-inline">Delete</button>
+                        </form>
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
