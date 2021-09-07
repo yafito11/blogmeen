@@ -36,10 +36,15 @@
                             <a href="#!">Start Bootstrap</a>
                             on September 24, 2021
                         </p>
-                        <a href="/blog/<%= article.id %>/edit " class="btn btn-link text-info">Edit</a>
+                        <div class="flex-container" style="display: flex;">
+                            <div>
+                        <a href="/blog/<%= article.id %>/edit " class="btn btn-link text-info mb-2 ms-2">Edit</a></div>
+                        <div>
                         <form action="/blog/<%= article.id %>?_method=DELETE" id="form-delete" method="POST" >
-                            <button class="btn btn-link text-danger btn-inline">Delete</button>
+                            <button class="btn text-danger">Delete</button>
                         </form>
+                    </div>
+                    </div>
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />

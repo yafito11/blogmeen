@@ -12,6 +12,7 @@ app.set('views', './src/views')
 app.set('view engine', 'ejs')
 
 app.use(express.urlencoded({
+    limit: "50mb",
     extended: false
 }))
 app.use(methodOverride('_method'))
